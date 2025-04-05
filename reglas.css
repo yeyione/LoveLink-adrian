@@ -1,0 +1,86 @@
+main {
+    background-color: rgb(255, 255, 255);
+    color: rgb(252, 251, 251);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    transition: box-shadow 0.4s ease;
+
+    &:hover {
+        box-shadow: 0 0 15px rgb(250, 10, 10);
+    }
+
+    .images-1 {
+        width: 20%;
+        height: 129%;
+        border-radius: 50%;
+        transition: all 0.3s;
+        animation: latido 1s infinite ease-in-out;
+    }
+
+    .images-1:hover {
+        transform: scale(1.2);
+    }
+
+    h1 {
+        font-size: 13px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        text-align: left;
+    }
+
+    li {
+        background: url('check-icon.png') no-repeat left center;
+        background-size: 20px;
+        padding-left: 30px;
+        margin: 10px 0;
+    }
+}
+
+@keyframes latido {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn {
+    background-color: red;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    /* Efecto hover */
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+
+button:active {
+    /* Efecto al hacer clic */
+    transform: scale(0.98);
+    /* Ligero efecto de presión */
+}

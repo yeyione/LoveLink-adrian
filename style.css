@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #ffffff;
+    /* background-image: url(images/fondo.jpg); */
+    background-size: cover;
+    background-position: center;
+}
+
+/* ====== ENCABEZADO (HEADER) ====== */
+.header {
+    background: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 89px;
+    padding: 5px 10%;
+}
+
+.header h1 {
+    color: #ff4d4d;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+    position: absolute;
+    right: 72%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.header h1:hover {
+    color: #ba3e3e;
+    text-shadow: 0 0 10px #ff4d4d, 0 0 20px #ff4d4d, 0 0 30px #ff4d4d;
+    /* transition: */
+}
+
+.header h1 span {
+    color: #ff4d4d;
+    font-size: 0.5em;
+    font-weight: 400;
+    display: block;
+    margin-top: 5px;
+}
+
+/* ====== LOGO ====== */
+.header .logo {
+    cursor: pointer;
+}
+
+.header .logo img {
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+    margin-top: 15%;
+}
+
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+
+/* ====== NAVEGACIÓN (ENLACES) ====== */
+.header nav {
+    margin-left: auto;
+    /* Mueve los enlaces a la derecha */
+}
+
+.header .nav-links {
+    list-style: none;
+    display: flex;
+    /* Alinea los enlaces en fila */
+    gap: 20px;
+    /* Espacio entre enlaces */
+}
+
+.header .nav-links li {
+    display: inline-block;
+}
+
+.header .nav-links li:hover {
+    transform: scale(1.1);
+}
+
+.header .nav-links a {
+    font-weight: 700;
+    color: #ba3e3e;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header .nav-links a:hover {
+    color: #ff4d4d;
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .header nav {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .header .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+}
+
+header {
+    h1 {
+        color: #ffffffd8;
+        font-size: 8vh;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin: 40px;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 85px);
+}
+
+footer {
+    background-color: #000000bd;
+    color: #ffffff;
+    padding: 2px 0;
+}
+
+
+.footer-content {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+
+    h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        color: #ff4d4d;
+    }
+
+    p {
+        font-size: 1em;
+        line-height: 1.6;
+        color: #cccccc;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: color 0.3s;
+
+            &:hover {
+                color: #ff4d4d;
+            }
+        }
+    }
+
+    .socials {
+        ul {
+            display: flex;
+            gap: 10px;
+
+            li a img {
+                width: 30px;
+                height: 30px;
+                transition: transform all 0.3s;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #ffffff;
+    border-top: 1px solid #333333;
+    padding-top: 10px;
+    text-align: center;
+}
