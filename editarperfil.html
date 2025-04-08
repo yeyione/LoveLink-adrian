@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="perfil.css">
+    <link rel="stylesheet" href="editarperfil.css">
+    <title>perfil</title>
+</head>
+<body>
+    <section class="perfil">
+        <h1>Foto de perfil</h1>
+
+        <label for="fotos"></label>
+        <table id="fotostabla">
+            <tr>
+                <td><input type="file" name="foto1" id="foto1"></td>
+                <td><input type="file" name="foto2" id="foto2"></td>
+                <td><input type="file" name="foto3" id="foto3"></td>
+            </tr>
+            <tr>
+                <td><input type="file" name="foto4" id="foto4"></td>
+                <td><input type="file" name="foto5" id="foto5"></td>
+                <td><input type="file" name="foto6" id="foto6"></td>
+            </tr>
+            <tr>
+                <td><input type="file" name="foto7" id="foto7"></td>
+                <td><input type="file" name="foto8" id="foto8"></td>
+                <td><input type="file" name="foto9" id="foto9"></td>
+            </tr>
+
+        </table>
+
+        <button type="submit" class="guardar">Anadir archivos</button>
+    </section>
+
+    <section class="informacion">
+        <h1>Acerca de mi</h1>
+            <textarea name="acerca_de_mi" id="acerca_de_mi"></textarea>
+        
+        <h1>Mas acerca de mi</h1>
+
+        <h1>Intereses</h1>
+            <textarea name="intereses" id="intereses"></textarea>
+        
+        <h1>Pronombres</h1>
+            <input type="text" name="pronombres" id="pronombres">
+    
+        <h1>Altura</h1>
+            <input type="text" name="altura" id="altura">
+        
+        <h1>Metas de relacion</h1>
+            <input type="text" name="metas" id="metas">
+
+        <h2>Mas sobre mi</h2>
+            <input type="text" placeholder=" Zodiaco"name="zodiaco" id="zodiaco">
+            <input type="text" placeholder="educacion" id="educacion">
+            <input type="text" placeholder="estilo de comunicacion" name="estilo_comunicacion" id="estilo_comunicacion">
+            <input type="text"placeholder="estilo de amor" name="estilo_amor" id="estilo_amor">
+
+        <section class="opciones">
+        <h1>idiomas que hablo</h1>
+            <label for="idiomas"></label>
+            <select id="idiomas" name="idiomas">
+                <option value="espanol">Español</option>
+                <option value="ingles">Inglés</option>
+                <option value="frances">Francés</option>
+                <option value="aleman">Alemán</option>
+                <option value="italiano">Italiano</option>
+                <option value="portugues">Portugués</option>
+            </select>
+        </section>
+
+        <h1>Genero</h1>
+            <label for="genero"></label>
+            <select id="genero" name="genero">
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="no_binario">No binario</option>
+                <option value="otro">Otro</option>
+            </select>
+
+        <h1>Orientacion sexual</h1>
+            <label for="orientacion"></label>
+            <select id="orientacion" name="orientacion">
+                <option value="heterosexual">Heterosexual</option>
+                <option value="gay u homosexual">homosexual</option>
+                <option value="bisexual">Bisexual</option>
+                <option value="pansexual">Pansexual</option>
+                <option value="asexual">Asexual</option>
+                <option value="lesbiana">Lesbiana</option>
+                <option value="queer">Queer</option>
+                <option value="otro">Otro</option>
+                <option value="prefiero no decir">Prefiero no decir</option>
+            </select>
+
+        <script src="repeat-inicio.js"></script>
+        <script src="editarpefil.js"></script>
+</html>
+</body>
