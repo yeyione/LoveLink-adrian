@@ -1,4 +1,4 @@
-ocument.querySelector(".settings").addEventListener("click", function() {
+document.querySelector(".settings").addEventListener("click", function() {
     alert("Redirigiendo a la página de Ajustes...");
     // Aquí iría la lógica para redirigir a la página de ajustes
     // window.location.href = "settings.html";

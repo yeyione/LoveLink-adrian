@@ -1,67 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="perfil.css">
+
     <link rel="stylesheet" href="editarperfil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>perfil</title>
 </head>
 <body>
-    <section class="perfil">
-        <h1>Foto de perfil</h1>
 
-        <label for="fotos"></label>
+    <section class="perfil">
+        <h1><i class="fas fa-user-circle"></i> Foto de perfil</h1>
+        <p>Sube tus fotos de perfil</p>
+
+
         <table id="fotostabla">
             <tr>
-                <td><input type="file" name="foto1" id="foto1"></td>
-                <td><input type="file" name="foto2" id="foto2"></td>
-                <td><input type="file" name="foto3" id="foto3"></td>
+                <td><label for="foto1" class="upload-btn">+</label><input type="file" name="foto1" id="foto1" class="hidden-input"></td>
+                <td><label for="foto2" class="upload-btn">+</label><input type="file" name="foto2" id="foto2" class="hidden-input"></td>
+                <td><label for="foto3" class="upload-btn">+</label><input type="file" name="foto3" id="foto3" class="hidden-input"></td>
             </tr>
             <tr>
-                <td><input type="file" name="foto4" id="foto4"></td>
-                <td><input type="file" name="foto5" id="foto5"></td>
-                <td><input type="file" name="foto6" id="foto6"></td>
+                <td><label for="foto4" class="upload-btn">+</label><input type="file" name="foto4" id="foto4" class="hidden-input"></td>
+                <td><label for="foto5" class="upload-btn">+</label><input type="file" name="foto5" id="foto5" class="hidden-input"></td>
+                <td><label for="foto6" class="upload-btn">+</label><input type="file" name="foto6" id="foto6" class="hidden-input"></td>
             </tr>
             <tr>
-                <td><input type="file" name="foto7" id="foto7"></td>
-                <td><input type="file" name="foto8" id="foto8"></td>
-                <td><input type="file" name="foto9" id="foto9"></td>
+                <td><label for="foto7" class="upload-btn">+</label><input type="file" name="foto7" id="foto7" class="hidden-input"></td>
+                <td><label for="foto8" class="upload-btn">+</label><input type="file" name="foto8" id="foto8" class="hidden-input"></td>
+                <td><label for="foto9" class="upload-btn">+</label><input type="file" name="foto9" id="foto9" class="hidden-input"></td>
             </tr>
-
         </table>
+        
 
-        <button type="submit" class="guardar">Anadir archivos</button>
+        <button type="submit" class="guardar">
+            <i class="fas fa-upload"></i> Añadir archivos</button>
     </section>
 
     <section class="informacion">
         <h1>Acerca de mi</h1>
-            <textarea name="acerca_de_mi" id="acerca_de_mi"></textarea>
+            <textarea name="acerca_de_mi" id="acerca_de_mi" placeholder="Escribe algo sobre ti......"></textarea>
         
         <h1>Mas acerca de mi</h1>
 
-        <h1>Intereses</h1>
-            <textarea name="intereses" id="intereses"></textarea>
+        <h2>Intereses</h2>
+        <textarea name="intereses" id="intereses" placeholder="Cuentanos que es lo que te gusta hacer..."></textarea>
         
-        <h1>Pronombres</h1>
-            <input type="text" name="pronombres" id="pronombres">
+        <h2>Pronombres</h2>
+        <input type="text" name="pronombres" placeholder="" id="pronombres">
     
-        <h1>Altura</h1>
-            <input type="text" name="altura" id="altura">
+        <h2>Altura</h2>
+        <input type="text" name="altura" id="altura">
         
-        <h1>Metas de relacion</h1>
-            <input type="text" name="metas" id="metas">
+        <h2>Metas de relacion</h2>
+        <input type="text" name="metas" id="metas">
 
         <h2>Mas sobre mi</h2>
-            <input type="text" placeholder=" Zodiaco"name="zodiaco" id="zodiaco">
-            <input type="text" placeholder="educacion" id="educacion">
-            <input type="text" placeholder="estilo de comunicacion" name="estilo_comunicacion" id="estilo_comunicacion">
-            <input type="text"placeholder="estilo de amor" name="estilo_amor" id="estilo_amor">
+        <input type="text" placeholder=" Zodiaco"name="zodiaco" id="zodiaco">
+        <input type="text" placeholder="educacion" id="educacion">
+        <input type="text" placeholder="estilo de comunicacion" name="estilo_comunicacion" id="estilo_comunicacion">
+        <input type="text"placeholder="estilo de amor" name="estilo_amor" id="estilo_amor">
 
         <section class="opciones">
-        <h1>idiomas que hablo</h1>
-            <label for="idiomas"></label>
+            <h2>idiomas que hablo</h2>
+            <label for="idiomas">Selecciona un idioma:</label>
             <select id="idiomas" name="idiomas">
                 <option value="espanol">Español</option>
                 <option value="ingles">Inglés</option>
@@ -70,10 +73,9 @@
                 <option value="italiano">Italiano</option>
                 <option value="portugues">Portugués</option>
             </select>
-        </section>
 
-        <h1>Genero</h1>
-            <label for="genero"></label>
+            <h2>Genero</h2>
+            <label for="genero">Selecciona tu genero:</label>
             <select id="genero" name="genero">
                 <option value="masculino">Masculino</option>
                 <option value="femenino">Femenino</option>
@@ -81,8 +83,8 @@
                 <option value="otro">Otro</option>
             </select>
 
-        <h1>Orientacion sexual</h1>
-            <label for="orientacion"></label>
+            <h2>Orientacion sexual</h2>
+            <label for="orientacion">Selecciona tu orientacion:</label>
             <select id="orientacion" name="orientacion">
                 <option value="heterosexual">Heterosexual</option>
                 <option value="gay u homosexual">homosexual</option>
@@ -94,8 +96,10 @@
                 <option value="otro">Otro</option>
                 <option value="prefiero no decir">Prefiero no decir</option>
             </select>
+        </section>
+    </section>
 
-        <script src="repeat-inicio.js"></script>
-        <script src="editarpefil.js"></script>
-</html>
+    <script src="repeat-inicio.js"></script>
+    <script src="editarperfil.js"></script>
 </body>
+</html>
