@@ -1,0 +1,77 @@
+body {
+  background-color: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-top: 50px;
+  margin: 0;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  color: #aaa;
+  margin-bottom: 40px;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.btn {
+  padding: 25px;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+}
+
+.galeria {
+  background: linear-gradient(135deg, #f77062, #fe5196);
+}
+
+.camara {
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+}
+
+.guardar {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+  margin-top: 30px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+#preview {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+#preview img {
+  max-width: 120px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}

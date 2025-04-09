@@ -1,27 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="settings.css">
-    <title>settings</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" href="settings.css"/>
+    <title>Configuración</title>
 </head>
 <body>
-    direccion de correo
-    numero de telefono
-    contraseña
-    notificaciones
-        mensajes botones con push
-        likes
-        comentarios
-        coincidencias
-    idiomas
-        español
-        ingles
-        frances
-    cerrar sesion
-    borrar cuenta
+    <div class="settings-container">
+    <h1>Configuración</h1>
+
+    <div class="setting-item">
+        <label for="correo">Dirección de correo</label>
+        <input type="email" id="correo" placeholder="correo@ejemplo.com">
+    </div>
+
+    <div class="setting-item">
+        <label for="telefono">Número de teléfono</label>
+        <input type="tel" id="telefono" placeholder="+34 600 000 000">
+    </div>
+
+    <div class="setting-item">
+        <label for="contrasena">Contraseña</label>
+        <input type="password" id="contrasena" placeholder="••••••••">
+    </div>
+
+    <h2>Notificaciones</h2>
+    <div class="setting-item checkbox">
+        <label><input type="checkbox" id="notifMensajes"> Mensajes push</label>
+    </div>
+    <div class="setting-item checkbox">
+        <label><input type="checkbox" id="notifLikes"> Likes</label>
+    </div>
+    <div class="setting-item checkbox">
+        <label><input type="checkbox" id="notifComentarios"> Comentarios</label>
+    </div>
+    <div class="setting-item checkbox">
+        <label><input type="checkbox" id="notifCoincidencias"> Coincidencias</label>
+    </div>
+
+    <h2>Idioma</h2>
+    <div class="setting-item">
+    <select id="idioma">
+        <option value="es">Español</option>
+        <option value="en">Inglés</option>
+        <option value="fr">Francés</option>
+    </select>
+    </div>
+
+    <div class="setting-item danger">
+        <button id="cerrarSesion">Cerrar sesión</button>
+        <button id="borrarCuenta">Borrar cuenta</button>
+    </div>
+    </div>
+    <div class="setting-item save-button">
+        <button id="guardarCambios">Guardar cambios</button>
+        <button id="cancelar">Cancelar</button>
+    </div>
 
     <script src="repeat-inicio.js"></script>
     <script src="settings.js"></script>

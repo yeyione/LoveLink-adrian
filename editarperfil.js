@@ -19,3 +19,32 @@ for (let i = 1; i <= 9; i++) {
         }
     });
 }
+// Muestra la vista previa de la imagen seleccionada
+function mostrarVistaPrevia(input, previewId) {
+    const preview = document.getElementById(previewId);
+    if (input.files && input.files[0]) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            preview.src = e.target.result; // Establece la imagen como fuente
+            preview.style.display = "block"; // Muestra la vista previa
+        };
+        reader.readAsDataURL(input.files[0]);
+    } else {
+        preview.src = "";
+        preview.style.display = "none";
+    }
+}
+
+// Elimina la imagen seleccionada y oculta la vista previa
+function eliminarFoto(inputId, previewId) {
+    const inputFile = document.getElementById(inputId);
+    const preview = document.getElementById(previewId);
+    if (inputFile) {
+        inputFile.value = ""; // Limpia el valor del campo de archivo
+    }
+    if (preview) {
+        preview.src = ""; // Limpia la vista previa
+        preview.style.display = "none"; // Oculta la vista previa
+    }
+    alert("La imagen ha sido eliminada.");
+}

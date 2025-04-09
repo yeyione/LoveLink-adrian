@@ -3,39 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="editarperfil.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <title>perfil</title>
 </head>
 <body>
 
     <section class="perfil">
-        <h1><i class="fas fa-user-circle"></i> Foto de perfil</h1>
+        <h1> Foto de perfil</h1>
         <p>Sube tus fotos de perfil</p>
-
-
+        
         <table id="fotostabla">
             <tr>
-                <td><label for="foto1" class="upload-btn">+</label><input type="file" name="foto1" id="foto1" class="hidden-input"></td>
-                <td><label for="foto2" class="upload-btn">+</label><input type="file" name="foto2" id="foto2" class="hidden-input"></td>
-                <td><label for="foto3" class="upload-btn">+</label><input type="file" name="foto3" id="foto3" class="hidden-input"></td>
+                <td>
+                    <label for="foto1" class="upload-btn">+</label>
+                    <input type="file" name="foto1" id="foto1" class="hidden-input" onchange="mostrarVistaPrevia(this, 'preview1')">
+                    <img id="preview1" src="" alt="Vista previa" style="display: none; max-width: 100px; margin-top: 10px;">
+                    <button type="button" class="eliminar" onclick="eliminarFoto('foto1', 'preview1')">Eliminar</button>
+                </td>
+                <td>
+                    <label for="foto2" class="upload-btn">+</label>
+                    <input type="file" name="foto2" id="foto2" class="hidden-input" onchange="mostrarVistaPrevia(this, 'preview2')">
+                    <img id="preview2" src="" alt="Vista previa" style="display: none; max-width: 100px; margin-top: 10px;">
+                    <button type="button" class="eliminar" onclick="eliminarFoto('foto2', 'preview2')">Eliminar</button>
+                </td>
+                <td>
+                    <label for="foto3" class="upload-btn">+</label>
+                    <input type="file" name="foto3" id="foto3" class="hidden-input" onchange="mostrarVistaPrevia(this, 'preview3')">
+                    <img id="preview3" src="" alt="Vista previa" style="display: none; max-width: 100px; margin-top: 10px;">
+                    <button type="button" class="eliminar" onclick="eliminarFoto('foto3', 'preview3')">Eliminar</button>
+                </td>
+                <td>
+                    <label for="foto4" class="upload-btn">+</label>
+                    <input type="file" name="foto4" id="foto4" class="hidden-input" onchange="mostrarVistaPrevia(this, 'preview4')">
+                    <img id="preview4" src="" alt="Vista previa" style="display: none; max-width: 100px; margin-top: 10px;">
+                    <button type="button" class="eliminar" onclick="eliminarFoto('foto4', 'preview4')">Eliminar</button>
+                </td>
             </tr>
             <tr>
-                <td><label for="foto4" class="upload-btn">+</label><input type="file" name="foto4" id="foto4" class="hidden-input"></td>
-                <td><label for="foto5" class="upload-btn">+</label><input type="file" name="foto5" id="foto5" class="hidden-input"></td>
-                <td><label for="foto6" class="upload-btn">+</label><input type="file" name="foto6" id="foto6" class="hidden-input"></td>
-            </tr>
-            <tr>
-                <td><label for="foto7" class="upload-btn">+</label><input type="file" name="foto7" id="foto7" class="hidden-input"></td>
-                <td><label for="foto8" class="upload-btn">+</label><input type="file" name="foto8" id="foto8" class="hidden-input"></td>
-                <td><label for="foto9" class="upload-btn">+</label><input type="file" name="foto9" id="foto9" class="hidden-input"></td>
+                <td>
+                    <label for="foto5" class="upload-btn">+</label>
+                    <input type="file" name="foto5" id="foto5" class="hidden-input" onchange="mostrarVistaPrevia(this, 'preview5')">
+                    <img id="preview5" src="" alt="Vista previa" style="display: none; max-width: 100px; margin-top: 10px;">
+                    <button type="button" class="eliminar" onclick="eliminarFoto('foto5', 'preview5')">Eliminar</button>
+                </td>
+                <td>
+                    <label for="foto6" class="upload-btn">+</label>
+                    <input type="file" name="foto6" id="foto6" class="hidden-input" onchange="mostrarVistaPrevia(this, 'preview6')">
+                    <img id="preview6" src="" alt="Vista previa" style="display: none; max-width: 100px; margin-top: 10px;">
+                    <button type="button" class="eliminar" onclick="eliminarFoto('foto6', 'preview6')">Eliminar</button>
+                </td>
+                <td>
+                    <label for="foto7" class="upload-btn">+</label>
+                    <input type="file" name="foto7" id="foto7" class="hidden-input" onchange="mostrarVistaPrevia(this, 'preview7')">
+                    <img id="preview7" src="" alt="Vista previa" style="display: none; max-width: 100px; margin-top: 10px;">
+                    <button type="button" class="eliminar" onclick="eliminarFoto('foto7', 'preview7')">Eliminar</button>
+                </td>
+                <td>
+                    <label for="foto8" class="upload-btn">+</label>
+                    <input type="file" name="foto8" id="foto8" class="hidden-input" onchange="mostrarVistaPrevia(this, 'preview8')">
+                    <img id="preview8" src="" alt="Vista previa" style="display: none; max-width: 100px; margin-top: 10px;">
+                    <button type="button" class="eliminar" onclick="eliminarFoto('foto8', 'preview8')">Eliminar</button>
+                </td>
             </tr>
         </table>
         
 
-        <button type="submit" class="guardar">
-            <i class="fas fa-upload"></i> Añadir archivos</button>
+        <button type="submit" class="guardar">Añadir archivos</button>
     </section>
 
     <section class="informacion">

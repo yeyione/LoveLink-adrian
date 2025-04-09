@@ -25,11 +25,15 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     margin: 0;
-    padding: 20px;
+    padding: 70px;
 }
 
 h1, h2 {
     margin-top: 20px;
+}
+p {
+    margin: 10px 0;
+    text-align: center;
 }
 
 .perfil, .informacion {
@@ -43,13 +47,36 @@ h1, h2 {
 table#fotostabla {
     width: 100%;
     border-spacing: 10px;
+    border-style: dashed;
+    border-color: var(--border-color);
+    border-width: 2px;
+    border-radius: 10px;
 }
 
 table#fotostabla td {
     text-align: center;
 }
 
-input[type="file"],
+input[type="file"] {
+    display: none; /* Oculta el campo de entrada de archivo */
+}
+
+label.upload-btn {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
 textarea,
 input[type="text"],
 select {
@@ -73,18 +100,41 @@ textarea {
 button.guardar {
     background-color: var(--accent-color);
     color: white;
-    padding: 12px 24px;
+    padding: 17px 24px;
     font-size: 16px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     margin-top: 15px;
     transition: background-color 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 button.guardar:hover {
-    background-color: #45a049;
+    background-color: #551c1c;
 }
+
+button.eliminar {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+button.eliminar:hover {
+    background-color: #cc0000;
+}
+
+button.eliminar:active {
+    background-color: #990000;
+}
+
 
 .opciones {
     margin-top: 30px;
@@ -105,26 +155,4 @@ button.guardar:hover {
     table#fotostabla td {
         margin-bottom: 10px;
     }
-}
-
-button.guardar {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-content: center;
-    background-color: var(--accent-color);
-    transition: transform 0.2s ease, background-color 0.3s ease;
-}
-
-button.guardar:hover {
-    background-color: #3e9c47;
-    transform: scale(1.05);
-}
-.perfil, .informacion {
-    animation: fadeIn 0.8s ease;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
 }

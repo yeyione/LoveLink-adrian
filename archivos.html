@@ -1,16 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="archivos.css">
+  <title>Subir múltiples imágenes (sesión)</title>
 </head>
 <body>
-    Crear nuevo
-    selecciona un tipo de contenido
+  <h2>Crear nuevo</h2>
+  <p>Selecciona una o más imágenes</p>
 
-        subir desde el dispositivo
+  <div class="btn-container">
+    <label class="btn galeria" for="galeriaInput">Subir desde la Galería</label>
+    <input type="file" id="galeriaInput" accept="image/*" multiple onchange="guardarImagenes(event)">
 
-        Tomar foto
+    <label class="btn camara" for="camaraInput">Capturar con la Cámara</label>
+    <input type="file" id="camaraInput" accept="image/*" capture="environment" multiple onchange="guardarImagenes(event)">
+  </div>
+
+  
+
+    <div id="preview"></div>
+      <button class="btn guardar" onclick="guardarYRedirigir()">Guardar</button>
+    <script src="archivos.js"></script>
 </body>
 </html>

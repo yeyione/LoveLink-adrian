@@ -1,0 +1,92 @@
+.settings-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: #e91e63;
+    margin-bottom: 15px;
+}
+
+.setting-item {
+    margin-bottom: 15px;
+}
+
+.setting-item label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.setting-item input[type="email"],
+.setting-item input[type="tel"],
+.setting-item input[type="password"],
+.setting-item select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.setting-item.checkbox label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+}
+
+.setting-item.checkbox input {
+    margin-right: 10px;
+}
+
+.danger {
+    display: flex;
+    justify-content: space-between;
+}
+
+.danger button {
+    background: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.danger button:hover {
+    background: #d32f2f;
+}
+.save-button {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.save-button button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff4b5c;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.save-button button:hover {
+    background-color: #e04352;
+}
+
+#guardarCambios {
+    background-color: #4CAF50; /* Verde */
+}
+
+#cancelar {
+    background-color: #f44336; /* Rojo */
+}
